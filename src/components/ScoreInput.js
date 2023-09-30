@@ -1,19 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const ScoreInput = () => {
+export const ScoreInput = ({ submitScore, score }) => {
   return (
     <div className="input_wrapper">
       <label>
         Them
-        <input name="them" type="number" />
+        <input
+          value={score.them}
+          type="number"
+          onChange={(e) => score.setThem(e.target.value)}
+        />
       </label>
 
       <label>
         Us
-        <input name="Us" type="number" />
+        <input
+          value={score.us}
+          type="number"
+          onChange={(e) => score.setUs(e.target.value)}
+        />
       </label>
 
-      <button>Add Round</button>
+      <button onClick={submitScore}>Add Round</button>
     </div>
   );
 };
