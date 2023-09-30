@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { ScoreList } from "./ScoreList";
 
-export const ScoreTable = ({ them, us }) => {
-  const [usTotal, setUsTotal] = useState(0);
-  const [themTotal, setThemTotal] = useState(0);
-
+export const ScoreTable = ({ roundScores }) => {
   return (
     <div className="total_wrapper">
       <table>
@@ -17,7 +14,9 @@ export const ScoreTable = ({ them, us }) => {
         </thead>
 
         <tbody>
-          <ScoreList score={{ them, us }} />
+          {roundScores.map((score, index) => {
+            <ScoreList roundScore={score} round={index} />;
+          })}
         </tbody>
 
         <tfoot></tfoot>
