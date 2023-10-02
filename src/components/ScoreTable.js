@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ScoreList } from "./ScoreList";
+import { ScoreList } from "./";
 
 export const ScoreTable = ({ roundScores }) => {
   return (
@@ -8,14 +8,14 @@ export const ScoreTable = ({ roundScores }) => {
         <thead>
           <tr>
             <th>Total</th>
-            <td>{themTotal}</td>
-            <td>{usTotal}</td>
+            <td>{roundScores.themTotal}</td>
+            <td>{roundScores.usTotal}</td>
           </tr>
         </thead>
 
         <tbody>
-          {roundScores.map((score, index) => {
-            <ScoreList roundScore={score} round={index} />;
+          {roundScores.scores.map((score, index) => {
+            return <ScoreList key={index} roundScore={score} round={index} />;
           })}
         </tbody>
 

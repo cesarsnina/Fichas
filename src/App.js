@@ -6,9 +6,15 @@ const App = () => {
   const [them, setThem] = useState(0);
   const [us, setUs] = useState(0);
   const [scores, setScores] = useState([[0, 0]]);
+  const [themTotal, setThemTotal] = useState(0);
+  const [usTotal, setUsTotal] = useState(0);
 
   const submitScore = () => {
-    setScores([them, us]);
+    setScores([...scores, [them, us]]);
+    console.log("scores: ", scores);
+    setThemTotal(themTotal + them);
+    console.log("themTotal: ", themTotal);
+    setUsTotal(usTotal + us);
     setThem(0);
     setUs(0);
   };
@@ -20,7 +26,7 @@ const App = () => {
         submitScore={submitScore}
         score={{ them, us, setThem, setUs }}
       />
-      <ScoreTable roundScores={scores} />
+      <ScoreTable roundScores={{ scores, themTotal, usTotal }} />
     </div>
   );
 };

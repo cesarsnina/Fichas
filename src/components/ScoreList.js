@@ -1,11 +1,11 @@
 import React from "react";
 
-export const ScoreList = ({ Round, score }) => {
+export const ScoreList = ({ roundScore, round }) => {
   return (
     <tr>
-      <th>R{(Round = 1)}</th>
-      <td>{score.them}</td>
-      <td>{score.us}</td>
+      <th>R{round + 1}</th>
+      <td>{roundScore[0]}</td>
+      <td>{roundScore[1]}</td>
     </tr>
   );
 };
