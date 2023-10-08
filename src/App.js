@@ -11,9 +11,7 @@ const App = () => {
 
   const submitScore = () => {
     setScores([...scores, [them, us]]);
-    console.log("scores: ", scores);
     setThemTotal(themTotal + them);
-    console.log("themTotal: ", themTotal);
     setUsTotal(usTotal + us);
     setThem(0);
     setUs(0);
