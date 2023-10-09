@@ -3,18 +3,21 @@ import { Header, ScoreInput, ScoreTable } from "./components";
 import "./App.css";
 
 const App = () => {
-  const [them, setThem] = useState(0);
-  const [us, setUs] = useState(0);
-  const [scores, setScores] = useState([[0, 0]]);
+  const [them, setThem] = useState("");
+  const [us, setUs] = useState("");
+  const [scores, setScores] = useState([]);
   const [themTotal, setThemTotal] = useState(0);
   const [usTotal, setUsTotal] = useState(0);
 
   const submitScore = () => {
+    console.log("them, us", typeof them, typeof us);
+    console.log("total", typeof themTotal, typeof usTotal);
+
     setScores([...scores, [them, us]]);
-    setThemTotal(themTotal + them);
-    setUsTotal(usTotal + us);
-    setThem(0);
-    setUs(0);
+    setThemTotal(themTotal + Number(them));
+    setUsTotal(usTotal + Number(us));
+    setThem("");
+    setUs("");
   };
 
   return (

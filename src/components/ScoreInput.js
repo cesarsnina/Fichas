@@ -7,8 +7,9 @@ export const ScoreInput = ({ submitScore, score }) => {
         Them
         <input
           value={score.them}
+          placeholder={0}
           type="number"
-          onChange={(e) => score.setThem(e.target.value)}
+          onChange={(e) => score.setThem(Number(e.target.value))}
         />
       </label>
 
@@ -16,8 +17,9 @@ export const ScoreInput = ({ submitScore, score }) => {
         Us
         <input
           value={score.us}
+          placeholder={0}
           type="number"
-          onChange={(e) => score.setUs(e.target.value)}
+          onChange={(e) => score.setUs(Number(e.target.value))}
         />
       </label>
 
