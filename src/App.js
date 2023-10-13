@@ -10,9 +10,6 @@ const App = () => {
   const [usTotal, setUsTotal] = useState(0);
 
   const submitScore = () => {
-    console.log("them, us", typeof them, typeof us);
-    console.log("total", typeof themTotal, typeof usTotal);
-
     setScores([...scores, [them, us]]);
     setThemTotal(themTotal + Number(them));
     setUsTotal(usTotal + Number(us));
@@ -23,10 +20,16 @@ const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      <ScoreInput
-        submitScore={submitScore}
-        score={{ them, us, setThem, setUs }}
-      />
+      {themTotal > 200 ? (
+        "Them is the Winner"
+      ) : usTotal > 200 ? (
+        "Us is the Winner"
+      ) : (
+        <ScoreInput
+          submitScore={submitScore}
+          score={{ them, us, setThem, setUs }}
+        />
+      )}
       <ScoreTable roundScores={{ scores, themTotal, usTotal }} />
     </div>
   );
