@@ -17,6 +17,13 @@ const App = () => {
     setUs("");
   };
 
+  const deleteRound = (index) => {
+    const score = scores.splice(index, 1)[0];
+    setThemTotal(themTotal - Number(score[0]));
+    setUsTotal(usTotal - Number(score[1]));
+    setScores(scores);
+  };
+
   return (
     <div className="app-wrapper">
       <Header />
@@ -30,7 +37,7 @@ const App = () => {
           score={{ them, us, setThem, setUs }}
         />
       )}
-      <ScoreTable roundScores={{ scores, themTotal, usTotal }} />
+      <ScoreTable roundScores={{ scores, themTotal, usTotal, deleteRound }} />
     </div>
   );
 };

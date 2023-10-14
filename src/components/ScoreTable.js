@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ScoreList } from "./";
 
 export const ScoreTable = ({ roundScores }) => {
@@ -15,7 +15,14 @@ export const ScoreTable = ({ roundScores }) => {
 
         <tbody>
           {roundScores.scores.map((score, index) => {
-            return <ScoreList key={index} roundScore={score} round={index} />;
+            return (
+              <ScoreList
+                key={index}
+                roundScore={score}
+                round={index}
+                deleteRound={roundScores.deleteRound}
+              />
+            );
           })}
         </tbody>
 
