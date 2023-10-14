@@ -27,9 +27,9 @@ const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      {themTotal > 200 ? (
+      {themTotal >= 200 ? (
         "Them is the Winner"
-      ) : usTotal > 200 ? (
+      ) : usTotal >= 200 ? (
         "Us is the Winner"
       ) : (
         <ScoreInput
