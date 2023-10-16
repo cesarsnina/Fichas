@@ -1,5 +1,5 @@
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.app-container {
+  background-color: #999999;
+  width: 70%;
+  margin: auto;
 }

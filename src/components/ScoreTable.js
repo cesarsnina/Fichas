@@ -1,9 +1,10 @@
 import React from "react";
 import { ScoreList } from "./";
+import "./ScoreTable.css";
 
 export const ScoreTable = ({ roundScores }) => {
   return (
-    <div className="total_wrapper">
+    <div className="total_container">
       <table>
         <thead>
           <tr>

@@ -1,10 +1,11 @@
 import React from "react";
+import "./ScoreInput.css";
 
 export const ScoreInput = ({ submitScore, score }) => {
   return (
-    <div className="input_wrapper">
+    <div className="input_container">
       <label>
-        Them
+        <span>Them</span>
         <input
           value={score.them}
           placeholder={0}

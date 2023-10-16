@@ -1,0 +1,27 @@
+.header_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.header_title {
+  background-color: pink;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+h1 {
+  color: blue;
+  font-family: "Apple Chancery", "Times New Roman", Times, serif;
+}
+
+.header_button {
+  align-self: center;
+  text-align: center;
+}
+
+.header_button button {
+  font-weight: 900;
+  font-size: 16px;
+  padding: 20px;
+}

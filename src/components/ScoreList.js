@@ -1,4 +1,5 @@
 import React from "react";
+import "./ScoreList.css";
 
 export const ScoreList = ({ roundScore, round, deleteRound }) => {
   return (

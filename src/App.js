@@ -25,12 +25,12 @@ const App = () => {
   };
 
   return (
-    <div className="app-wrapper">
+    <div className="app-container">
       <Header />
       {themTotal >= 200 ? (
-        "Them is the Winner"
+        "Them is the Winner!"
       ) : usTotal >= 200 ? (
-        "Us is the Winner"
+        "Us is the Winner!"
       ) : (
         <ScoreInput
           submitScore={submitScore}
