@@ -4,27 +4,35 @@ import "./ScoreInput.css";
 export const ScoreInput = ({ submitScore, score }) => {
   return (
     <div className="input_container">
-      <label>
-        <span>Them</span>
-        <input
-          value={score.them}
-          placeholder={0}
-          type="number"
-          onChange={(e) => score.setThem(Number(e.target.value))}
-        />
-      </label>
+      <div>
+        <label>
+          Them
+          <br />
+          <input
+            value={score.them}
+            placeholder={0}
+            type="number"
+            onChange={(e) => score.setThem(Number(e.target.value))}
+          />
+        </label>
+      </div>
 
-      <label>
-        Us
-        <input
-          value={score.us}
-          placeholder={0}
-          type="number"
-          onChange={(e) => score.setUs(Number(e.target.value))}
-        />
-      </label>
+      <div>
+        <label>
+          Us
+          <br />
+          <input
+            value={score.us}
+            placeholder={0}
+            type="number"
+            onChange={(e) => score.setUs(Number(e.target.value))}
+          />
+        </label>
+      </div>
 
-      <button onClick={submitScore}>Add Round</button>
+      <div>
+        <button onClick={submitScore}>Add Round</button>
+      </div>
     </div>
   );
 };
