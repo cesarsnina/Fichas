@@ -3,11 +3,11 @@ import "./ScoreList.css";
 
 export const ScoreList = ({ roundScore, round, deleteRound }) => {
   return (
-    <tr>
-      <th>R{round + 1}</th>
-      <td>{roundScore[0] || 0}</td>
-      <td>{roundScore[1] || 0}</td>
-      <td onClick={(e) => deleteRound(round)}>Delete</td>
-    </tr>
+    <>
+      <p>R{round + 1}</p>
+      <p>{roundScore[0] || 0}</p>
+      <p>{roundScore[1] || 0}</p>
+      <p onClick={(e) => deleteRound(round)}>Delete</p>
+    </>
   );
 };
