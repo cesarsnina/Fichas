@@ -24,9 +24,17 @@ const App = () => {
     setScores(scores);
   };
 
+  const newGame = () => {
+    setThem("");
+    setUs("");
+    setScores([]);
+    setThemTotal(0);
+    setUsTotal(0);
+  };
+
   return (
     <div className="app-container">
-      <Header />
+      <Header newGame={newGame} />
       {themTotal >= 200 ? (
         "Them is the Winner!"
       ) : usTotal >= 200 ? (

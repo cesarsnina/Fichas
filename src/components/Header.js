@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-export const Header = () => {
+export const Header = ({ newGame }) => {
   return (
     <div className="header_container">
       <div className="header_title">
@@ -9,7 +9,7 @@ export const Header = () => {
       </div>
 
       <div className="header_button">
-        <button>New</button>
+        <button onClick={newGame}>New</button>
       </div>
     </div>
   );
