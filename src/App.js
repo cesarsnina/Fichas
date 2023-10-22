@@ -18,10 +18,12 @@ const App = () => {
   };
 
   const deleteRound = (index) => {
+    console.log("scores: ", scores);
     const score = scores.splice(index, 1)[0];
     setThemTotal(themTotal - Number(score[0]));
     setUsTotal(usTotal - Number(score[1]));
     setScores(scores);
+    console.log("scores2: ", scores);
   };
 
   const newGame = () => {
