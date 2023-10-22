@@ -1,18 +1,21 @@
 .header_container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #999999;
+  background-color: navy;
 }
 
 .header_title {
-  align-items: center;
   grid-column-start: 1;
   grid-column-end: 3;
+  align-items: center;
 }
 
-h1 {
-  font-family: "Apple Chancery", "Times New Roman", Times, serif;
+.header_title h1 {
+  margin: 0.5em 0em;
   text-align: center;
+  font-size: 4em;
+  font-family: "Apple Chancery", "Times New Roman", Times, serif;
+  color: white;
 }
 
 .header_button {
@@ -21,7 +24,31 @@ h1 {
 }
 
 .header_button button {
+  padding: 0.7em;
   font-weight: 900;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 1.4em;
+  border-radius: 1em;
+  border-color: white;
+  background-color: #333333;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .header_title h1 {
+    font-size: 3em;
+  }
+
+  .header_container button {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header_title h1 {
+    font-size: 2em;
+  }
+
+  .header_container button {
+    font-size: 0.7em;
+  }
 }
