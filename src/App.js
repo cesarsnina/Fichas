@@ -17,13 +17,12 @@ const App = () => {
     setUs("");
   };
 
-  const deleteRound = (index) => {
-    console.log("scores: ", scores);
-    const score = scores.splice(index, 1)[0];
-    setThemTotal(themTotal - Number(score[0]));
-    setUsTotal(usTotal - Number(score[1]));
-    setScores(scores);
-    console.log("scores2: ", scores);
+  const deleteRound = (round) => {
+    const copyScores = [...scores];
+    const roundScore = copyScores.splice(round, 2)[0];
+    setThemTotal(themTotal - Number(roundScore[0]));
+    setUsTotal(usTotal - Number(roundScore[1]));
+    setScores(copyScores);
   };
 
   const newGame = () => {
