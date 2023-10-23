@@ -4,28 +4,62 @@
 }
 
 .input_container div {
+  padding: 0.5em;
   text-align: center;
 }
 
 .input_container label {
-  color: blue;
+  font-size: 1.6em;
+  font-weight: 900;
+  color: white;
 }
 
-input {
+.input_container input {
+  border-radius: 1em;
+  padding: 0.4em;
+  height: 40%;
   width: 60%;
+  font-size: 1em;
 }
 
 .input_container div:last-child {
   grid-column-start: 1;
   grid-column-end: 3;
-  width: 81%;
-  color: red;
   margin: auto;
+  width: 81%;
 }
 
 .input_container button {
+  background-color: #333333;
+  border-radius: 1em;
+  border-color: white;
+  padding: 0.4em;
   width: 100%;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: white;
 }
 
-button {
+@media only screen and (max-width: 600px) {
+  .input_container label {
+    font-size: 1.2em;
+  }
+
+  .input_container div:last-child {
+    width: 80%;
+  }
+
+  .input_container button {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .input_container label {
+    font-size: 0.8em;
+  }
+
+  .input_container button {
+    font-size: 0.7em;
+  }
 }

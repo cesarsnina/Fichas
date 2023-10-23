@@ -11,10 +11,10 @@
 }
 
 .header_title h1 {
-  margin: 0.5em 0em;
   text-align: center;
-  font-size: 4em;
+  margin: 0.3em 0em;
   font-family: "Apple Chancery", "Times New Roman", Times, serif;
+  font-size: 4em;
   color: white;
 }
 
@@ -24,12 +24,12 @@
 }
 
 .header_button button {
+  background-color: #333333;
+  border-radius: 1em;
+  border-color: white;
   padding: 0.7em;
   font-weight: 900;
   font-size: 1.4em;
-  border-radius: 1em;
-  border-color: white;
-  background-color: #333333;
   color: white;
 }
 
