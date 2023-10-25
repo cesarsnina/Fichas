@@ -1,6 +1,7 @@
 .app-container {
-  background-color: #666666;
+  background-color: #006daa;
   margin: auto;
   width: 60%;
   min-width: 20em;
+  max-width: 80em;
 }
