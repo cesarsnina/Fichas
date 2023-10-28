@@ -3,7 +3,7 @@ import "./Header.css";
 
 export const Header = ({ newGame }) => {
   return (
-    <div className="header_container">
+    <div id="header_container">
       <div className="header_title">
         <h1>Fichas</h1>
       </div>

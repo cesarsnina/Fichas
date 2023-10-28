@@ -1,4 +1,4 @@
-.header_container {
+#header_container {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: navy;
@@ -38,7 +38,7 @@
     font-size: 3em;
   }
 
-  .header_container button {
+  #header_container button {
     font-size: 1em;
   }
 }
@@ -48,7 +48,7 @@
     font-size: 2em;
   }
 
-  .header_container button {
+  #header_container button {
     font-size: 0.7em;
   }
 }

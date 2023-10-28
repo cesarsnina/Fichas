@@ -1,20 +1,20 @@
-.input_container {
+#input_container {
   display: grid;
   grid-template-columns: auto auto;
 }
 
-.input_container div {
+#input_container div {
   padding: 0.5em;
   text-align: center;
 }
 
-.input_container label {
+#input_container label {
   font-size: 1.6em;
   font-weight: 900;
   color: white;
 }
 
-.input_container input {
+#input_container input {
   border-radius: 1em;
   padding: 0.4em;
   height: 40%;
@@ -22,14 +22,14 @@
   font-size: 1em;
 }
 
-.input_container div:last-child {
+#input_container div:last-child {
   grid-column-start: 1;
   grid-column-end: 3;
   margin: auto;
   width: 82%;
 }
 
-.input_container button {
+#input_container button {
   background-color: #333333;
   border-radius: 1em;
   border-color: white;
@@ -41,43 +41,43 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .input_container label {
+  #input_container label {
     font-size: 1.4em;
   }
 
-  .input_container button {
+  #input_container button {
     font-size: 1.3em;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .input_container label {
+  #input_container label {
     font-size: 1.1em;
   }
 
-  .input_container input {
+  #input_container input {
     font-size: 0.8em;
   }
 
-  .input_container button {
+  #input_container button {
     font-size: 1.1em;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .input_container label {
+  #input_container label {
     font-size: 0.8em;
   }
 
-  .input_container input {
+  #input_container input {
     font-size: 0.8em;
   }
 
-  .input_container div:last-child {
+  #input_container div:last-child {
     width: 80%;
   }
 
-  .input_container button {
+  #input_container button {
     font-size: 0.7em;
   }
 }

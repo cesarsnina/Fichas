@@ -3,7 +3,7 @@ import "./ScoreInput.css";
 
 export const ScoreInput = ({ submitScore, score }) => {
   return (
-    <div className="input_container">
+    <div id="input_container">
       <div>
         <label>
           Them

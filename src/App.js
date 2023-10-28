@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
+    <div id="app-container">
       <Header newGame={newGame} />
       {themTotal >= 200 ? (
         "Them is the Winner!"

@@ -4,10 +4,10 @@ import "./ScoreTable.css";
 
 export const ScoreTable = ({ roundScores }) => {
   return (
-    <div className="total_container">
-      <p>Total</p>
-      <p>{roundScores.themTotal}</p>
-      <p>{roundScores.usTotal}</p>
+    <div id="total_container">
+      <p className="total-header">Total</p>
+      <p className="total-header">{roundScores.themTotal}</p>
+      <p className="total-header">{roundScores.usTotal}</p>
       <p></p>
 
       {roundScores.scores.map((score, index) => {
