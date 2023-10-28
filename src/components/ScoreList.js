@@ -5,7 +5,7 @@ import "./ScoreList.css";
 export const ScoreList = ({ roundScore, round, deleteRound }) => {
   return (
     <>
-      <p className="header">R{round + 1}</p>
+      <p className="row-header">R{round + 1}</p>
       <p>{roundScore[0] || 0}</p>
       <p>{roundScore[1] || 0}</p>
       <p onClick={() => deleteRound(round)}>

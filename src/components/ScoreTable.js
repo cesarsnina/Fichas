@@ -8,7 +8,7 @@ export const ScoreTable = ({ roundScores }) => {
       <p className="total-header">Total</p>
       <p className="total-header">{roundScores.themTotal}</p>
       <p className="total-header">{roundScores.usTotal}</p>
-      <p></p>
+      <p className="total-header"></p>
 
       {roundScores.scores.map((score, index) => {
         return (

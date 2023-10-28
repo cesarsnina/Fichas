@@ -37,9 +37,9 @@ const App = () => {
     <div id="app-container">
       <Header newGame={newGame} />
       {themTotal >= 200 ? (
-        "Them is the Winner!"
+        <h1>Them is the Winner!</h1>
       ) : usTotal >= 200 ? (
-        "Us is the Winner!"
+        <h1>Us is the Winner!</h1>
       ) : (
         <ScoreInput
           submitScore={submitScore}

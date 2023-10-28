@@ -3,9 +3,11 @@
   grid-template-columns: auto auto auto auto;
 }
 
-#total_container .total-header p {
+#total_container p {
   text-align: center;
   font-size: 1.6em;
-  font-weight: 900;
   color: white;
+}
+#total_container .total-header {
+  font-weight: 900;
 }

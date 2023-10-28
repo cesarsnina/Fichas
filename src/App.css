@@ -1,7 +1,13 @@
 #app-container {
-  background-color: #006daa;
+  background-color: blue;
   margin: auto;
   width: 60%;
   min-width: 20em;
   max-width: 80em;
+}
+
+#app-container h1 {
+  text-align: center;
+  font-weight: 900;
+  color: white;
 }
