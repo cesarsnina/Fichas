@@ -19,7 +19,7 @@ const App = () => {
 
   const deleteRound = (round) => {
     const copyScores = [...scores];
-    const roundScore = copyScores.splice(round, 2)[0];
+    const roundScore = copyScores.splice(round, 1)[0];
     setThemTotal(themTotal - Number(roundScore[0]));
     setUsTotal(usTotal - Number(roundScore[1]));
     setScores(copyScores);
